@@ -1,0 +1,70 @@
+.about {
+    display: flex;
+    background: #F5F8FF;
+    padding: 14.5rem 0;
+    position: relative;
+    background-image: url('../images/about/about-img.png');
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: right 170px;
+    .container {
+        display: flex;
+    }
+
+    .row {
+        flex-wrap: wrap;
+    }
+
+    &__column {
+        flex-basis: 34.388009991673606%;
+    }
+
+    &__posttitle {
+        text-align: left;
+    }
+
+    &__title {
+        text-align: left;
+        margin: 27px 0;
+    }
+
+    &__descr {
+        text-align: left;
+    }
+
+    &__ui {
+        margin: 47px 0 0 0;
+    }
+
+    &__btn-left {
+        background: #4C85FF;
+        color: #fff;
+        box-shadow: 0px 5px 15px rgba(188, 199, 255, 0.75);
+    }
+
+    &__btn-right {
+        border: 1px solid #D1D1E4;
+        color: #ADB4D2;
+    }
+
+    &__btn {
+        flex: 0 0 50%;
+    }
+
+    img {
+        position: relative;
+        flex: 0 0 53%;
+        height: 835px;
+        right: -350px;
+        top: 170px;
+    }
+
+    @media (max-width:1046px){
+        background-image: none;
+        padding: 5rem 0;
+        &__column {
+            flex-basis: 100%;
+        }
+    }
+}
+

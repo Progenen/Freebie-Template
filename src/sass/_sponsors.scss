@@ -1,0 +1,30 @@
+.sponsors {
+    padding: 58px 0;
+    overflow-x: auto;
+    &__row {
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__column {
+        flex-basis: 13.12%;
+        cursor: pointer;
+        &:hover {
+            svg path {
+                fill: #5982E7;
+            }
+        }
+        svg {
+            path {
+                transition: .2s;
+                cursor: pointer;
+                
+            }
+        }
+    }
+
+    &__container {
+        min-width: 888px;
+        
+    }
+}
