@@ -121,7 +121,7 @@
         }
     }
 }
-.slide {
+.item {
     position: absolute;
     width: 100%;
     z-index: 3;
@@ -132,6 +132,9 @@
     background-repeat: no-repeat;
     background-position: center;
     overflow-x: auto;
+    &::-webkit-scrollbar {
+        opacity: 0;
+    }
     svg {
         display: block;
         margin: auto;
