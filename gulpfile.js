@@ -10,6 +10,9 @@ const uglify       = require('gulp-uglify');
 const newer        = require('gulp-newer');
 const del          = require('del');
 const fileinclude  = require('gulp-file-include');
+const order        = require('gulp-order');
+const jquery       = 'node_modules/jquery/dist/jquery.min.js';
+const slick        = 'node_modules/slick-carousel/slick/slick.min.js';
 
 function browsersync () {
     browserSync.init({
@@ -39,7 +42,7 @@ function html () {
 }
 
 function scripts () {
-    return src('src/JS/**/*.js')
+    return src([jquery, slick, 'src/JS/**.js'])
     .pipe(concat('all.min.js'))
     .pipe(dest('dist/JS/'))
     .pipe(browserSync.stream())

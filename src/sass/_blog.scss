@@ -6,183 +6,78 @@
     }
 
     &__title {
+        margin: 20px 0 92px 0;
         text-align: center;
-        margin: 20px 0 0 0;
     }
 
     &__slider {
-        display: flex;
-        margin: 92px 0 0 0;
-        align-items: center;
+    }
+}
+.blog-slide {
+    width: 83.0155979202773%;
+    padding: 64px 37px;
+    background-color: #fff;
+    border: 1px solid #D8E3FE;
+    box-sizing: border-box;
+    box-shadow: 0px 15px 50px #EFF4FF;
+    &__row {
         justify-content: space-between;
     }
 
-    &__prev {
-        cursor: pointer;
+    &__column {
+        flex: 0 1 46.14512471655329%;
+        display: flex;
+        justify-content: space-between;
+        &_sm {
+            display: flex;
+            flex-direction: column;
+            flex: 0 1 30.95823095823096%;
+            justify-content: space-between;
+            .blog-slide__img-block {
+                width: 100%;
+            }
+        }
+
+        &_m {
+            flex-direction: column;
+        }
     }
 
-    &__next {
-        cursor: pointer;
+    &__img-block {
+        position: relative;
+        &_big {
+            flex: 0 1 65.6019656019656%;
+        }
     }
 
-    &__arrow {
-        min-width: 32px;
+    &__img-element {
+        display: block;
     }
 
-    &__slide {
-        
-        margin: auto;
-        padding: 55px 35px;
-        background: #FFFFFF;
-        border: 1px solid #D8E3FE;
-        box-sizing: border-box;
-        box-shadow: 0px 15px 50px #EFF4FF;
-    }
-
-    &__gallery {
-        opacity: 0;
-        transition: .3s;
-        cursor: pointer;
+    &__icon-zoom {
         position: absolute;
-        width: 30%;
+        width: 24.344569288389515%;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
     }
 
-    &__row {
-        display: flex;
-        justify-content: space-between;
-    }
-
-    &__column {
-        flex: 0 1 47%;
-        &_m {
-            display: flex;
-            justify-content: space-between;
-        }
-
-        &_img {
-            display: flex;
-            flex-direction: column;
-            .blog__img {
-                flex: 0 1 49%;
-            }
-        }
-    }
-
-    &__img {
-        position: relative;
-        flex: 0 1 30.95823095823096%;
-        &:hover {
-            .blog__gallery {
-                opacity: 1;
-                
-            }
-        }
-        &_b {
-            flex: 0 1 65.6019656019656%;
-            height: 100%;
-            .blog__img-inner {
-                height: 95%;
-                width: 100%;
-            }
-            
-        }
-
-        .blog__img-inner {
-            width: 100%;
-        }
-    }
-
-    &__inner-title {
-        font-size: 36px;
-        display: block;
-        line-height: 45px;
-        font-weight: 400;
-        color: #3D4F9F;
-        
+    &__title {
     }
 
     &__descr {
-        font-size: 1rem;
-        line-height: 27px;
-        margin: 31px 0 44px 0;
-        letter-spacing: normal;
-        font-weight: 400;
-        max-height: 116px;
-        overflow: hidden;
     }
 
     &__ui {
-        display: flex;
-        
     }
 
     &__btn {
-        max-width: 113px;
-    }
-
-    &__btn-modern {
-        margin: 0 0 0 23px;
-        font-weight: bold;
-        font-size: 13px;
-        line-height: 16px;
-        color: #A6B6DA;
-        max-width: 211px;
-        padding: 13px 25px;
-    }
-
-    &__dots {
     }
 }
-.container {
-}
-.posttitle {
-}
-.title {
-
-    &_type {
-    }
-}
-.slider-wrapper {
-}
-.slider-inner {
+.row {
 }
 .btn {
 
     &_type {
     }
-}
-
-.slider__container {
-    display: flex;
-    align-items: center;
-}
-
-.slider-wrapper {
-    display: flex;
-    overflow-x: hidden;
-    width: 83.0155979202773%;
-    box-sizing: content-box;
-}
-
-.slider__dots {
-    display: flex;
-    justify-content: center;
-}
-.slider-inner {
-    display: flex;
-    transition: .3s;
-}
-.slider-dot {
-    border-radius: 50%;
-    width: 15px;
-    height: 15px;
-    font-size: 0;
-    background-color: red;
-    margin: 0 4px;
-}
-.slider-dot-active {
-    background-color: blue;
 }
